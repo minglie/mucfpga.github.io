@@ -13,7 +13,6 @@ try {
 }
 
 
-
 app.begin(function (req) {
     console.log(req.url+ "收到参数-->")
     console.log(req.param)
@@ -23,7 +22,6 @@ app.end(function (data) {
     console.log("响应参数-->")
     console.log(data)
 });
-
 
 
 app.post("/add",function (req, res) {
@@ -44,7 +42,6 @@ app.get("/delete",function (req, res) {
 
 
 app.post("/update",function (req, res) {
-
     M.updateObjByIdFile(page.fileName,req.param)
     res.send(M.result("修改成功"));
 });

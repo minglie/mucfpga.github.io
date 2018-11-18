@@ -8,12 +8,25 @@
     <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://minglie.github.io/js/M_mock.js"></script>
     <script src="js/reactTest.js"></script>
-
 </head>
-
 <body>
 
 <div id="example" class="example"></div>
+
+<button id="btn">测试</button>
+
+<script>
+    btn.onclick=function (){
+        $.get("/listAll",u=>alert(JSON.stringify(u)))
+    }
+</script>
+
+
+
+
+
+
+
 
 
 <script type="text/babel">
